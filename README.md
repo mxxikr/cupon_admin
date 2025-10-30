@@ -3,7 +3,20 @@
 ## 프로젝트 개요
 
 - 특정 사용자 그룹에게 대량으로 쿠폰을 발급하기 위한 관리자 시스템
-CSV 또는 Excel 형식의 사용자 목록 파일을 업로드하여 쿠폰 발급 대상을 지정하고 업로드된 파일의 유효성을 검증하며 디버깅 목적으로 원본 파일을 다시 다운로드하는 기능을 제공함
+- CSV 또는 Excel 형식의 사용자 목록 파일을 업로드하여 쿠폰 발급 대상을 지정하고 업로드된 파일의 유효성을 검증하며 디버깅 목적으로 원본 파일을 다시 다운로드하는 기능을 제공함
+
+<br>
+
+## 기술 스택
+- Backend
+    - Java 17
+    - Spring Boot 3.5.7
+- Database
+    - Spring Data JPA, H2
+- API Documentation
+    - `springdoc-openapi-starter-webmvc-ui:2.5.0`
+
+<br>
 
 ## 주요 기능
 
@@ -21,19 +34,7 @@ CSV 또는 Excel 형식의 사용자 목록 파일을 업로드하여 쿠폰 발
 - **공통 예외 처리**
     - `@RestControllerAdvice`를 통해 전역 예외 핸들러를 구현하고 일관된 형식의 에러를 응답함
 
-## 기술 스택
-- **언어**
-    - Java 17
-- **프레임워크**
-    - Spring Boot 3.5.7
-- **데이터베이스**
-    - Spring Data JPA, H2
-- **API 문서화**
-    - `springdoc-openapi-starter-webmvc-ui:2.5.0`
-- **라이브러리**
-    - `org.apache.poi`, `com.opencsv`, `org.projectlombok`
-- **테스트**
-    - JUnit 5, Mockito, AssertJ
+<br>
 
 ## API 명세
 
@@ -87,6 +88,8 @@ CSV 또는 Excel 형식의 사용자 목록 파일을 업로드하여 쿠폰 발
 - **Error Response**
     - `404 Not Found`
         - 해당 `fileId`의 파일을 찾을 수 없는 경우
+
+<br>
 
 ## 실행 및 테스트 방법
 
