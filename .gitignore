@@ -1,0 +1,17 @@
+# IDE and Build
+.idea/
+*.iml
+.vscode/
+.gradle/
+build/
+
+# Application specific
+# Uploaded files directory for development environment
+uploads-dev/
+
+# Log files
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
